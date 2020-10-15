@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Grenze+Gotisch&family=Jacques+Francois+Shadow&family=Sail&family=Sanchez:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 100%;
+}
+
+.navbar{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+
+.img_edit{
+    height: 38rem !important;
+    width: 100%;
+}
+
+.card-title{
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 3rem !important;
+    
+}
+
+
+
+
+#quoteicon{
+    float: left;
+    font-size: 3rem;
+}
+
+#quotes{
+    font-size: 3rem;
+    font-family: 'Sail', cursive;
+    color: red;
+}
+
+
+#authors{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2rem;
+}
+#authors::before{
+    content: "BY-";
+}
+
+
+
+#getQuotes{
+    font-family: 'Sanchez', serif;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+#getQuotes:hover{
+    outline: none;
+    border-top:4px solid red ;
+    border-bottom:4px solid blue ;
+    border-left:4px solid greenyellow ;
+    border-right:4px solid grey ;
+}
+
+
+#tweetme{
+    font-family: 'Sanchez', serif;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    float: right;
+    color: rgb(0, 153, 255);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+#menu_icon{
+    padding:0 0.5rem;
+}
+
