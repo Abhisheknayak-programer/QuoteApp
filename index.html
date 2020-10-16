@@ -24,20 +24,20 @@
 <section class="navbar">
     <nav class="blue">
         <div class="nav-wrapper container">
-          <a href="#!" class="brand-logo">Quote Generator</a>
+          <a href="#!" class="brand-logo">Quote App</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="/"><i class="fa fa-home"  id="menu_icon"  aria-hidden="true"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-user"  id="menu_icon" aria-hidden="true"></i>About</a></li>
-            <li><a href="#"><i class="fa fa-phone" id="menu_icon"  aria-hidden="true"></i>Contact</a></li>
+            <li><a href="/about.html"><i class="fa fa-user"  id="menu_icon" aria-hidden="true"></i>About</a></li>
+            <li><a href="/contact.html"><i class="fa fa-phone" id="menu_icon"  aria-hidden="true"></i>Contact</a></li>
           </ul>
         </div>
       </nav>
     
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>            
 </section>
     
@@ -51,6 +51,7 @@
         <a class="carousel-item" href="#"><img src="images/img31.jpg" class="responsive-img img_edit"></a>
         <a class="carousel-item" href="#"><img src="images/img41.jpg" class="responsive-img img_edit"></a>
         <a class="carousel-item" href="#"><img src="images/img51.jpg" class="responsive-img img_edit"></a>
+        <!-- <a class="carousel-item" href="#"><img src="images/img1.jpg" class="responsive-img img_edit"></a> -->
       </div>
 </section>
 
@@ -91,6 +92,40 @@
 
 
 
+
+<!-- footer section starts from here -->
+
+<section class="footer_holder">
+  <footer class="page-footer teal accent-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Odisha Bhubaneswar</h5>
+            <p class="black-text text-lighten-4">laxmisagar 751006</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Social Media</h5>
+            <ul class="social_media_icons">
+              <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; Linkdin</a></li>
+              <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-facebook-square" aria-hidden="true"></i> &nbsp; Facebook</a></li>
+              <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; Instagram</a></li>
+              <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-twitter-square" aria-hidden="true"></i> &nbsp; twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align black-text">
+        &copy; Copyright Abhishek Nayak Quote App 2020 | All Rights Reaserved !
+        </div>
+      </div>
+    </footer>
+</section>
+
+
+
+
+
 <!-- Custom Js -->
 <script src="index.js"></script>
 <!-- Materialize_JS -->
@@ -118,7 +153,9 @@
           $('.carousel').carousel('next');
           setTimeout(autoplay, 4000);
       }
-            
+      
+    $('textarea#textarea2').characterCounter();
+
   });
         
 </script>

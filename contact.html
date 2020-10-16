@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+      <!-- Materialize Css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- jquery cdn link from w3schools -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+<!-- Section for navbar  -->
+<section class="navbar">
+    <nav class="blue">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo">Quote App</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/"><i class="fa fa-home"  id="menu_icon"  aria-hidden="true"></i>Home</a></li>
+            <li><a href="/about.html"><i class="fa fa-user"  id="menu_icon" aria-hidden="true"></i>About</a></li>
+            <li><a href="/contact.html"><i class="fa fa-phone" id="menu_icon"  aria-hidden="true"></i>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>            
+</section>
+    
+
+<br>
+    <!-- contact Form  -->
+
+    <section class="contact container"> 
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+            <input id="First_name" type="text" class="validate">
+            <label for="First_name">First Name</label>
+          </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">done_all</i>
+          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">Enter Your Question</label>
+        </div>
+      </div>
+    </form>
+</div>
+
+<button class="btn waves-effect waves-light red" onclick="M.toast({html: 'Form Submitted !'})" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </section>
+    
+
+
+
+
+<br>
+
+
+<!-- footer section starts from here -->
+
+    <section class="footer_holder">
+        <footer class="page-footer teal accent-3">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="black-text">Odisha Bhubaneswar</h5>
+                  <p class="black-text text-lighten-4">laxmisagar 751006</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="black-text">Social Media</h5>
+                  <ul class="social_media_icons">
+                    <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; Linkdin</a></li>
+                    <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-facebook-square" aria-hidden="true"></i> &nbsp; Facebook</a></li>
+                    <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; Instagram</a></li>
+                    <li><a class="black-text text-lighten-3" href="#!"><i class="fa fa-twitter-square" aria-hidden="true"></i> &nbsp; twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container center-align black-text">
+              &copy; Copyright Abhishek Nayak Quote App 2020 | All Rights Reaserved !
+              </div>
+            </div>
+          </footer>
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- Materialize_JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('textarea#textarea2').characterCounter();
+  });
+</script>
+
+
+
+
+</body>
+</html>

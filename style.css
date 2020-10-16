@@ -84,3 +84,7 @@ html{
     padding:0 0.5rem;
 }
 
+
+.parallax-container{
+    width: 100%;
+}
